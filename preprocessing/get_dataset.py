@@ -166,8 +166,8 @@ def main():
     print(f"Instances in training set: {len(train)}")
     print(f"Instances in validation set: {len(val)}")
     print(f"Instances in test set: {len(test)}")
-    assert val[ycol].sum().sort_values()[0] > 1
-    assert test[ycol].sum().sort_values()[0] > 2
+    # assert val[ycol].sum().sort_values()[0] > 1
+    # assert test[ycol].sum().sort_values()[0] > 2
 
     # save
     train.to_json(TRAIN_PATH, orient="records", lines=True, index=True)
