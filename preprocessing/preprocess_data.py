@@ -137,7 +137,7 @@ def main():
                 generation_config,
                 max_char_len
             )
-            dataset.tags_string = summarize_keywords(dataset.tags_string)
+            # dataset.tags_string = summarize_keywords(dataset.tags_string)
 
             dataset["prompt"] = (
                 "Company name: "
