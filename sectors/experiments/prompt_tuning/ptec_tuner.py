@@ -30,7 +30,8 @@ class PTECTune(PromptTune):
             self.args.device,
             self.args.load_in_8bit,
             # self.args.nclasses if self.args.nclasses else len(self.unique_labels),
-            len(self.unique_labels),
+            3,
+            # len(self.unique_labels),
             parallelize = self.args.parallelize
         )
         tokenizer.col_token_id = None
