@@ -25,6 +25,9 @@ def train_and_eval(args, lr, epochs, sp_len, **kwargs):
 
 if __name__ == "__main__":
     args = construct_generation_args()
+    print("===============================================")
+    print(args)
+    print("===============================================")
     set_seed(args.seed)
     params = {
         "lr": (np.log10(1e-9), np.log10(args.max_lr)),
